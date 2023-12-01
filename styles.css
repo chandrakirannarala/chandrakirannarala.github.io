@@ -1,0 +1,40 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: url('images/header-background.jpg') no-repeat center center/cover;
+    padding: 50px;
+    text-align: center;
+    color: rgb(27, 25, 25);
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #222a34; /* Bootstrap primary blue */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #8e969e; /* Darker shade for hover effect */
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
