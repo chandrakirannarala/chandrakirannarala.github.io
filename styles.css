@@ -50,3 +50,67 @@ footer {
     background-color: #222;
     color: white;
 }
+
+/* Navigation Menu Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    color: rgb(35, 33, 33); /* Adjust color as needed */
+    text-decoration: none;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #efeaea; /* Dropdown background color */
+    box-shadow: 0px 8px 16px 0px rgba(249, 248, 248, 0.2);
+    z-index: 1;
+}
+
+.dropdown li {
+    float: none;
+}
+
+.dropdown li a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Show the dropdown on hover */
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.project-tile {
+    background-color: #ddd; /* Tile background color */
+    padding: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-tile:hover {
+    background-color: #ccc; /* Color on hover */
+}
+
+.project-description {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-left: 3px solid #0056b3; /* Left border color */
+    margin-bottom: 15px;
+}
