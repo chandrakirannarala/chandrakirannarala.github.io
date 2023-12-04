@@ -25,7 +25,7 @@
             <div class="experience-tile" onclick="toggleDescription('experience1Desc')">
                 <div class="experience-header">
                     <h3><b>Programmer Analyst - Cognizant Technology Solutions</b></h3>
-                    <p class="experience-duration"><b>Duration:</b> November 2020 - December 2021</p>
+                    <p class="duration"><b>Duration:</b> November 2020 - December 2021</p>
                 </div>
                 <div id="experience1Desc" class="experience-description" style="display:none;">
                     <ul>
@@ -41,20 +41,20 @@
             <h2><b>Projects</b></h2>
             
             <!-- Project 1 -->
+            
             <div class="project-tile" onclick="toggleDescription('project1Desc')">
                 <div class="project-header">
                     <h3>MBIST engine with 256x4b SRAM Memory array using 7nm Technology</h3>
                 </div>
             </div>
             <div id="project1Desc" class="project-description" style="display:none;">
+                <p>This project involves the design and development of a hardware system for Built-In Self-Test (BIST) algorithms focused on a 256x4 bit Static Random Access Memory (SRAM) using advanced 7nm technology. The key components of this project include:</p>
                 <ul>
-                    <p>This project involves the design and development of a hardware system for Built-In Self-Test (BIST) algorithms focused on a 256x4 bit Static Random Access Memory (SRAM) using advanced 7nm technology. The key components of this project include:</p>
-
-                    <li>Algorithm Implementation: The hardware is tailored to execute BIST algorithms on the specified SRAM, ensuring efficient and accurate self-testing capabilities.</li>
-                    <li>Verilog Description: A detailed behavioral description in Verilog has been developed for each component of the 256x4 bit SRAM. This description is vital for simulating the SRAM’s behavior and its interaction with the BIST engine.</li>
-                    <li>Integration of BIST Engine: The BIST engine is integrated at the operating speed of the SRAM. This integration is crucial for testing the memory array effectively.</li>
-                    <li>Testing with Various Patterns: The system is capable of testing the SRAM using multiple test patterns. These include Blanket 0 and 1 (testing all cells for 0 and 1 values), Checkerboard and reverse Checkerboard patterns (for alternating value testing), March C, and March LR (advanced memory testing algorithms).</li>
-                    <li>Simulation and Verification: The project extensively uses VIVADO simulations to verify the Register Transfer Level (RTL) design. This simulation ensures that the functionality and performance of the SRAM and BIST engine are accurate and meet the desired specifications.</li>
+                    <li><b>>Algorithm Implementation:</b> The hardware is tailored to execute BIST algorithms on the specified SRAM, ensuring efficient and accurate self-testing capabilities.</li>
+                    <li><b>Verilog Description:</b> A detailed behavioral description in Verilog has been developed for each component of the 256x4 bit SRAM. This description is vital for simulating the SRAM’s behavior and its interaction with the BIST engine.</li>
+                    <li><b>Integration of BIST Engine:</b> The BIST engine is integrated at the operating speed of the SRAM. This integration is crucial for testing the memory array effectively.</li>
+                    <li><b>Testing with Various Patterns:</b> The system is capable of testing the SRAM using multiple test patterns. These include Blanket 0 and 1 (testing all cells for 0 and 1 values), Checkerboard and reverse Checkerboard patterns (for alternating value testing), March C, and March LR (advanced memory testing algorithms).</li>
+                    <li><b>Simulation and Verification:</b> The project extensively uses VIVADO simulations to verify the Register Transfer Level (RTL) design. This simulation ensures that the functionality and performance of the SRAM and BIST engine are accurate and meet the desired specifications.</li>
                     
                 </ul>
             </div>
@@ -100,10 +100,15 @@
                 </div>
             </div>
             <div id="project5Desc" class="project-description" style="display:none;">
+                <p>This project involves the architecture and development of a folded cascode operational transconductance amplifier (OTA) using 45nm Complementary Metal-Oxide-Semiconductor (CMOS) technology. The key aspects of this project include:</p>
                 <ul>
-                    <li>Architected a folded cascode operational transconductance amplifier with a voltage biasing circuit, meeting design specifications with a 71dB gain, 180uW power consumption, and a 65o phase margin using a 45nm CMOS design.</li>
-                    <li>Evaluated transistor sizing in OTA circuitry, leveraging overdrive voltage estimations to optimize voltage biasing and examined different transistor scales. Optimized phase margin and bandwidth performance through analysis and testing.</li>
+                    <li><b>Design Objectives:</b> The project aimed to design a folded cascode operational transconductance amplifier (OTA) with a voltage biasing circuit. The target specifications included achieving a 71dB gain, a power consumption of 180uW, and a 65° phase margin, all within the constraints of a 45nm CMOS design.</li>
+                    <li><b>Initial Design and Adjustments:</b> The initial designs involved calculations of slew rate, bias current (Ibias), and transistor ratios. The team initially aimed for transistor scales as small as 10-15 nanometers, but adjustments were made due to the limitations of the Cadence design software, which has a minimum scale of 50nm. Initial designs only achieved a 15dB gain, leading to further adjustments.</li>
+                    <li><b>Transistor Sizing and Optimization:</b> The team evaluated and resized transistors in the OTA circuitry, particularly focusing on optimizing overdrive voltage to improve voltage biasing. They experimented with different transistor scales to balance the phase margin and bandwidth performance.</li>
+                    <li><b>Voltage Biasing Circuit Design:</b> The voltage biasing circuit was carefully designed to meet the power consumption and gain requirements. Adjustments to the voltage biasing and transistor sizes were made to find an optimal balance that maximized gain.</li>
+                    <li><b>Simulation and Results:</b> AC simulations were conducted to test the OTA gain, phase margin, and power consumption. The final design achieved a gain of 71.2005dB, exceeding the target of 70dB, with a 3dB frequency of 11.22kHz, surpassing the 10kHz bandwidth requirement. The phase margin was successfully maintained at 65°, and the power consumption was recorded at 62uW, well under the design requirement.</li>
                 </ul>
+                <p>Overall, achieved a successful design and optimization of a folded cascode OTA using 45nm technology, with a focus on achieving high gain, low power consumption, and an adequate phase margin. The project involved careful consideration of transistor sizing and voltage biasing, guided by both theoretical calculations and practical adjustments.</p>
             </div>
 
             <div class="project-tile" onclick="toggleDescription('project6Desc')">
@@ -124,10 +129,14 @@
                 </div>
             </div>
             <div id="project7Desc" class="project-description" style="display:none;">
+                <p>The project, carried out at New York University Tandon School of Engineering, aimed to develop a semi-automated blood pressure and heart rate measuring device. The primary focus was on implementing the Maximum Amplitude Algorithm (MAA) for accurate blood pressure monitoring.</p>
                 <ul>
-                    <li>Utilized a STM32f429I discovery board interfaced to micro pressure sensor with SPI protocol to plot systolic and diastolic pressure readings using Maximum Amplitude Algorithm.</li>
-                    <li>Developed Oscillometric Waveform Envelope graph from the peak values of pressure oscillations and Systolic and diastolic pressures were articulated from MAP with almost 98% accuracy.</li>
+                    <li><b>Technical Implementation: </b>The system utilized an STM32f429I discovery board interfaced with a Micro Pressure (MPR) sensor. Communication between the sensor and the board was achieved using the Serial Peripheral Interface (SPI) protocol. The specific SPI pins used for this interface were SPI_MISO (PA_6), SPI_MOSI (PA_7), SPI_SCK (PA_5), and SPI_SS (PB_6).</li>
+                    <li><b>Oscillometric Waveform Envelope (OMWE) Graph: </b>The core of the project was to plot the Oscillometric Waveform Envelope graph. This involved recording the peak values of pressure oscillations. The OMWE graph was crucial for determining the Mean Arterial Pressure (MAP) point, which is a key indicator in blood pressure measurement.</li>
+                    <li><b>Systolic and Diastolic Pressure Measurement: </b>The systolic and diastolic pressures were calculated from the MAP using two characteristic ratios, "Rs" (Systolic ratio) and "Rd" (Diastolic ratio). The systolic pressure was determined when the OMWE amplitude equaled RsMAP to the left of the MAP value, while the diastolic pressure corresponded to when the OMWE amplitude equaled RdMAP to the right of the MAP value.</li>
+                    <li><b>Accuracy and Effectiveness: </b>The system successfully articulated systolic and diastolic pressures from the MAP with an accuracy of almost 98%. This high accuracy level highlights the effectiveness of the implemented algorithm and the precision of the hardware setup.</li>
                 </ul>
+                <p>In summary, this project represents a significant achievement in the field of embedded systems for medical applications, specifically in the accurate measurement of blood pressure using advanced algorithms and microcontroller interfacing techniques.</p>
             </div>
         
         </section>

@@ -35,6 +35,10 @@ p {
     font-size: 1em; /* 16px to match the body font size */
 }
 
+.duration {
+    text-align: right;
+}
+
 .resume-button {
     display: inline-block;
     padding: 12px 25px;
@@ -117,7 +121,7 @@ nav ul li:hover .dropdown {
 .project-header {
     display: flex;
     justify-content: space-between; /* This will push the duration to the right */
-    align-items: baseline; /* Aligns items along the baseline of the container */
+    align-items: center; /* Aligns items along the baseline of the container */
 }
 
 
@@ -155,6 +159,6 @@ nav ul li:hover .dropdown {
 .experience-header {
     display: flex;
     justify-content: space-between; /* This will push the duration to the right */
-    align-items: baseline; /* Aligns items along the baseline of the container */
+    align-items: center; /* Aligns items along the baseline of the container */
 }
 
