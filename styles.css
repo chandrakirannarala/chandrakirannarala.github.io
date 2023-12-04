@@ -1,5 +1,6 @@
 body {
     font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px; /* Set a standard base font size */
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -14,14 +15,31 @@ header {
     color: rgb(37, 36, 36);
 }
 
-h1, h2, h3, p {
+h1 {
     margin-bottom: 15px;
+    font-size: 2em; /* 32px if base is 16px */
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 1.75em; /* 28px if base is 16px */
+}
+
+h3 {
+    margin-bottom: 15px;
+    font-size: 1.75em; /* 24px if base is 16px */
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1em; /* 16px to match the body font size */
 }
 
 .resume-button {
     display: inline-block;
     padding: 12px 25px;
     margin: 10px;
+    font-size: 1em;
     background-color: #0056b3; /* A blue that stands out */
     color: white;
     text-decoration: none;
@@ -95,22 +113,48 @@ nav ul li:hover .dropdown {
     display: block;
 }
 
-.project-tile {
-    background-color: #ddd; /* Tile background color */
+
+.project-header {
+    display: flex;
+    justify-content: space-between; /* This will push the duration to the right */
+    align-items: baseline; /* Aligns items along the baseline of the container */
+}
+
+
+.experience-tile, .project-tile {
+    background-color: #fff;
     padding: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 1em; /* Set the font size as per your preference */
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.project-tile:hover {
-    background-color: #ccc; /* Color on hover */
-}
-
-.project-description {
+.experience-description, .project-description {
     background-color: #f4f4f4;
     padding: 10px;
-    border-left: 3px solid #0056b3; /* Left border color */
-    margin-bottom: 15px;
+    border-left: 3px solid #0056b3;
+    display: none; /* Initially hidden */
+    margin-bottom: 15px; /* Space after the description */
 }
+
+/* Adjust hover effect for both types of tiles */
+.experience-tile:hover, .project-tile:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* More pronounced shadow on hover */
+}
+
+.experience-tile h3, .project-tile h3 {
+    font-size: 1em; /* Adjust font size as necessary */
+    margin: 0; /* Reset margin */
+}
+
+
+.experience-header {
+    display: flex;
+    justify-content: space-between; /* This will push the duration to the right */
+    align-items: baseline; /* Aligns items along the baseline of the container */
+}
+
