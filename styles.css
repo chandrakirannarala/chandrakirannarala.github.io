@@ -19,14 +19,14 @@ header {
 .header-content {
     display: inline-block;
     background: rgba(255, 255, 255, 0.6); /* White background with opacity */
-    backdrop-filter: blur(1px); /* Blur effect for the background */
+    backdrop-filter: blur(2px); /* Blur effect for the background */
     padding: 20px;
-    width: 40%; /* Adjust the width as needed */
+    width: 50%; /* Adjust the width as needed */
     max-width: 1200px; /* Optional: maximum width of the content */
     border-radius: 10px; /* Optional: if you want rounded corners */
     margin: auto; /* This will center the content */
 }
-  
+
 .resume-button .fa-download {
     margin-left: 5px;
 }
