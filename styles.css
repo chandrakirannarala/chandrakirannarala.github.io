@@ -13,7 +13,24 @@ header {
     padding: 50px;
     text-align: center;
     color: rgb(37, 36, 36);
+    background-size: cover;
+  }
+  
+.header-content {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.6); /* White background with opacity */
+    backdrop-filter: blur(1px); /* Blur effect for the background */
+    padding: 20px;
+    width: 40%; /* Adjust the width as needed */
+    max-width: 1200px; /* Optional: maximum width of the content */
+    border-radius: 10px; /* Optional: if you want rounded corners */
+    margin: auto; /* This will center the content */
 }
+  
+.resume-button .fa-download {
+    margin-left: 5px;
+}
+  
 
 h1 {
     margin-bottom: 15px;
@@ -39,19 +56,28 @@ p {
     text-align: right;
 }
 
+.contact-info {
+    display: flex;
+    justify-content: space-between; /* Or 'space-between' depending on how much space you want between them */
+}
+  
+.contact-info p {
+    margin: 0; /* Remove default margin */
+    padding: 0.5em; /* Optional padding for better spacing */
+}
+  
+
 .resume-button {
     display: inline-block;
     padding: 12px 25px;
-    margin: 10px;
-    font-size: 1em;
-    background-color: #0056b3; /* A blue that stands out */
+    background-color: #0056b3;
     color: white;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    border: 1px solid transparent; /* Add border to define button */
-    transition: all 0.3s ease;
-}
+    border: none;
+    margin-top: 20px; /* Spacing from the text above */
+  }
 
 .resume-button:hover {
     background-color: #003d82; /* Darker shade for hover effect */

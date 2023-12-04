@@ -5,12 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chandra Kiran Narala | Hardware Design Engineer</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     </head>
     <body>
         <header>
-            <h1><b>Chandra Kiran Narala</b></h1>
-            <p>Hardware Design Engineer / ASIC/ FPGA</p>
-            <a href="myresume.pdf" class="resume-button" download="Chandra_Kiran_Narala_Resume.pdf">Download Resume</a>
+            <div class="header-content">
+                <h1><b>Chandra Kiran Narala</b></h1>
+                <p><b>Hardware Design Engineer / ASIC/ FPGA</b></p>
+                <a href="myresume.pdf" class="resume-button" download="Chandra_Kiran_Narala_Resume.pdf">Resume <i class="fa fa-download"></i></a>
+            </div>
         </header>
 
     <div class="container">
@@ -50,23 +53,12 @@
             <div id="project1Desc" class="project-description" style="display:none;">
                 <p>This project involves the design and development of a hardware system for Built-In Self-Test (BIST) algorithms focused on a 256x4 bit Static Random Access Memory (SRAM) using advanced 7nm technology. The key components of this project include:</p>
                 <ul>
-                    <li><b>>Algorithm Implementation:</b> The hardware is tailored to execute BIST algorithms on the specified SRAM, ensuring efficient and accurate self-testing capabilities.</li>
+                    <li><b>Algorithm Implementation:</b> The hardware is tailored to execute BIST algorithms on the specified SRAM, ensuring efficient and accurate self-testing capabilities.</li>
                     <li><b>Verilog Description:</b> A detailed behavioral description in Verilog has been developed for each component of the 256x4 bit SRAM. This description is vital for simulating the SRAM’s behavior and its interaction with the BIST engine.</li>
                     <li><b>Integration of BIST Engine:</b> The BIST engine is integrated at the operating speed of the SRAM. This integration is crucial for testing the memory array effectively.</li>
                     <li><b>Testing with Various Patterns:</b> The system is capable of testing the SRAM using multiple test patterns. These include Blanket 0 and 1 (testing all cells for 0 and 1 values), Checkerboard and reverse Checkerboard patterns (for alternating value testing), March C, and March LR (advanced memory testing algorithms).</li>
                     <li><b>Simulation and Verification:</b> The project extensively uses VIVADO simulations to verify the Register Transfer Level (RTL) design. This simulation ensures that the functionality and performance of the SRAM and BIST engine are accurate and meet the desired specifications.</li>
                     
-                </ul>
-            </div>
-
-            <div class="project-tile" onclick="toggleDescription('project2Desc')">
-                <div class="project-header">
-                    <h3><b>8b ALU using 7nm Technology</b></h3>
-                </div>
-            </div>
-            <div id="project2Desc" class="project-description" style="display:none;">
-                <ul>
-                    <li>Fabricated hardware of 8b ALU to synthesize and build a physical layout using Genus and Cadence Innovus using ASAP 7nm library and programmed a behavioral Verilog description of 8b ALU and conducted synthesis to determine component dependencies on area power and cycle time and finalized the physical layout.</li>
                 </ul>
             </div>
 
@@ -76,10 +68,13 @@
                 </div>
             </div>
             <div id="project3Desc" class="project-description" style="display:none;">
+                <p>The project involved implementing a 32-bit processor using either VHDL or Verilog. This processor, named NYU-6463-RV32I, was designed to execute a subset of the open-source RISC-V RV32I instruction set. It was capable of running arbitrary programs and functioned on FPGA hardware, specifically interfaced with Basys3/Nexys4 development boards.</p>
                 <ul>
-                    <li>Architected a 32-bit a processor which executes a subset of the open-source RISC-V RV32I instruction set.</li>
-                    <li>Interfaced this design on an FPGA basys3 board, conducted power, area, and timing analysis, with the design operating at 100MHz, reporting negative slack in timing constraints, allowing operation at even higher frequencies.</li>
+                    <li><b>Processor Design and Operation: </b>The processor performed tasks such as instruction fetch, decode, execution, memory access, and write-back in a multi-cycle approach. The program counter (PC) value indexed the instruction memory to supply a 32-bit instruction value. This instruction was then decoded to determine its type and the corresponding control signals and functions to be executed by the Arithmetic Logic Unit (ALU) and other components.</li>
+                    <li><b>Implementation and Analysis: </b>project required the implementation of the processor as specified, with a focus on performance (maximum speed), area (number of gates used), and a comprehensive analysis of the design. This included identifying and explaining the critical path of the design. The processor had to be synthesizable and interface with switches and LEDs on the FPGA board.</li>
+                    <li><b>Performance Characteristics: </b>The design operated at a frequency of 100MHz and reported negative slack in timing constraints, indicating that it could potentially operate at even higher frequencies. This aspect suggests that the design was efficient in terms of speed and met the timing requirements comfortably.</li>
                 </ul>
+                <p>The project successfully developed a 32-bit processor based on the RISC-V RV32I instruction set, demonstrating proficiency in hardware design and analysis. The processor's ability to operate at high speeds with the potential for even higher frequencies highlights the effectiveness of the design and implementation.</p>
             </div>
 
             <div class="project-tile" onclick="toggleDescription('project4Desc')">
@@ -88,10 +83,13 @@
                 </div>
             </div>
             <div id="project4Desc" class="project-description" style="display:none;">
+                <p>The project involved designing and simulating an 8Kbits 6T SRAM memory cell. This SRAM cell was constructed by converting a basic SRAM circuit cell into a symbol, which was then used repeatedly to generate a larger memory cell. Specifically, the design used a configuration of 16x128 times to create a 64KB memory cell.</p>
                 <ul>
-                    <li>Designed and simulated 8Kbits 6T SRAM memory cell, comprising essential peripherals such as row and column decoders, sense amplifiers, pre-charge circuits, and write drivers to support non-destructive read and reliable write operations.</li>
-                    <li>Used the Cadence simulator, HSPICE, to simulate the memory array circuit and performed simulations to evaluate functionality, timing, and performance for read and write operations.</li>
+                    <li><b>Peripheral Integration: </b>The processor performed tasks such as instruction fetch, decode, execution, memory access, and write-back in a multi-cycle approach. The program counter (PC) value indexed the instruction memory to supply a 32-bit instruction value. This instruction was then decoded to determine its type and the corresponding control signals and functions to be executed by the Arithmetic Logic Unit (ALU) and other components.</li>
+                    <li><b>Simulation using HSPICE: </b>project required the implementation of the processor as specified, with a focus on performance (maximum speed), area (number of gates used), and a comprehensive analysis of the design. This included identifying and explaining the critical path of the design. The processor had to be synthesizable and interface with switches and LEDs on the FPGA board.</li>
+                    <li><b>Energy Consumption Analysis: </b>The design operated at a frequency of 100MHz and reported negative slack in timing constraints, indicating that it could potentially operate at even higher frequencies. This aspect suggests that the design was efficient in terms of speed and met the timing requirements comfortably.</li>
                 </ul>
+                <p>Therefore, This project successfully designed and simulated a 256x32 SRAM memory array using advanced 7nm technology. The project demonstrated a comprehensive approach, incorporating essential peripherals for efficient operation and conducting detailed simulations to evaluate the system's functionality and energy efficiency.</p>
             </div>
 
             <div class="project-tile" onclick="toggleDescription('project5Desc')">
@@ -117,10 +115,13 @@
                 </div>
             </div>
             <div id="project6Desc" class="project-description" style="display:none;">
+                <p>This project involved creating a Python-based fingerprint matching application. The application allows users to upload fingerprint images and compares them against a database to find matches. It utilizes third-party libraries like OpenCV for image processing and tkinter for the graphical user interface (GUI).</p>
                 <ul>
-                    <li>Developed a Python-based fingerprint matching application using OpenCV and tkinter, achieving a 95% accuracy rate through the implementation of the Scale-Invariant Feature Transform (SIFT) algorithm.</li>
-                    <li>Improved matching efficiency by 30% by integrating advanced preprocessing techniques, resulting in faster results for users, and reduced false positives by 20% through a refined matching process, ensuring more accurate fingerprint identification</li>
+                    <li><b>Image Processing and Matching Algorithm: </b>The application employs OpenCV to preprocess images, including background removal, resizing, and filtering to enhance the accuracy of the matching process. The core of the matching process relies on the Scale-Invariant Feature Transform (SIFT) algorithm, implemented in the runMatcher.py file. This algorithm detects keypoints and descriptors in fingerprint images, and the Fast Library for Approximate Nearest Neighbors (FLANN) algorithm is used to find matches between these descriptors.</li>
+                    <li><b>Matching Process and User Interaction: </b>The application filters matches based on a distance threshold and a minimum match count. If a sufficient number of matches are found, it identifies the fingerprints as matching; otherwise, they are considered non-matching. The application visually represents the matches using green lines between the input image and the database image. If no matches are found, the application prompts the user to save the fingerprint in the database, ensuring that the database can be continually updated with new fingerprints.</li>
+                    <li><b>Achievements and Efficiency: </b>The application achieved a high accuracy rate of 95% for fingerprint matching through the implementation of the SIFT algorithm. It also improved matching efficiency by 30% and reduced false positives by 20% through advanced preprocessing techniques and a refined matching process.</li>
                 </ul>
+                <p>In summary, this project successfully developed a highly accurate and efficient fingerprint matching application with a user-friendly GUI. It showcases the effective integration of image processing algorithms and GUI design in Python, contributing significantly to the field of digital fingerprint analysis.</p>
             </div>
 
             <div class="project-tile" onclick="toggleDescription('project7Desc')">
@@ -138,23 +139,44 @@
                 </ul>
                 <p>In summary, this project represents a significant achievement in the field of embedded systems for medical applications, specifically in the accurate measurement of blood pressure using advanced algorithms and microcontroller interfacing techniques.</p>
             </div>
+
+            <div class="project-tile" onclick="toggleDescription('project2Desc')">
+                <div class="project-header">
+                    <h3><b>8b ALU using 7nm Technology</b></h3>
+                </div>
+            </div>
+            <div id="project2Desc" class="project-description" style="display:none;">
+                <ul>
+                    <li>Fabricated hardware of 8b ALU to synthesize and build a physical layout using Genus and Cadence Innovus using ASAP 7nm library and programmed a behavioral Verilog description of 8b ALU and conducted synthesis to determine component dependencies on area power and cycle time and finalized the physical layout.</li>
+                </ul>
+            </div>
         
         </section>
         
         <section id="skills">
             <h2><b>Skills</b></h2>
+            <p><b>Languages: </b></p>
             <ul>
-                <li>Verilog/ VHDL</li>
-                <li>Python</li>
-                <li>Microprocessor/ Microcontrollers Architecture</li>
+                <li> C, Python, Verilog, VHDL, ARM Cortex Assembly Level Programming</li>
+            </ul>
+            <p><b>Tools: </b></p>
+            <ul>
+                <li>Cadence Virtuoso, Cadence Innovus, Xilinx Vivado, Genus, HSPICE, Matlab, NI Labview, Mutlisim, MS Office, VS Code, OpenCV, Tkinter, Simulink</li>
+            </ul>
+            <p><b>Area of Expertise: </b></p>
+            <ul>
+                <li>RTL Design, FPGA, ASIC Design, Digital & Analog Design, Debugging, Static Timing Analysis, Low Power Design Techniques, Network Protocols, STM32f429I discovery board, Memory Architecture</li>
             </ul>
         </section>
         
         <section id="contact">
             <h2><b>Contact</b></h2>
-            <p>Email: chandrakirannarala@gmail.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/chandrakirannarala/">chandrakirannarala</a></p>
-        </section>
+            <div class="contact-info">
+              <p>Email: <a href="mailto:chandrakirannarala@gmail.com">chandrakirannarala@gmail.com</a></p>
+              <p>LinkedIn: <a href="https://www.linkedin.com/in/chandrakirannarala/" target="_blank"><b>chandrakirannarala</b></a></p>
+            </div>
+          </section>
+          
     </div>
 
     <footer>
