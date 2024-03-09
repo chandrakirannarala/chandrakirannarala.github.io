@@ -169,6 +169,8 @@ nav ul li:hover .dropdown {
     border-left: 3px solid #0056b3;
     display: none; /* Initially hidden */
     margin-bottom: 15px; /* Space after the description */
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /* Adjust hover effect for both types of tiles */
