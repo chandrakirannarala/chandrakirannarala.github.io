@@ -14,8 +14,8 @@ header {
     text-align: center;
     color: rgb(37, 36, 36);
     background-size: cover;
-  }
-  
+}
+
 .header-content {
     display: inline-block;
     background: rgba(255, 255, 255, 0.6); /* White background with opacity */
@@ -30,7 +30,6 @@ header {
 .resume-button .fa-download {
     margin-left: 5px;
 }
-  
 
 h1 {
     margin-bottom: 15px;
@@ -60,12 +59,11 @@ p {
     display: flex;
     justify-content: space-between; /* Or 'space-between' depending on how much space you want between them */
 }
-  
+
 .contact-info p {
     margin: 0; /* Remove default margin */
     padding: 0.5em; /* Optional padding for better spacing */
 }
-  
 
 .resume-button {
     display: inline-block;
@@ -77,7 +75,7 @@ p {
     border-radius: 5px;
     border: none;
     margin-top: 20px; /* Spacing from the text above */
-  }
+}
 
 .resume-button:hover {
     background-color: #003d82; /* Darker shade for hover effect */
@@ -143,13 +141,11 @@ nav ul li:hover .dropdown {
     display: block;
 }
 
-
 .project-header {
     display: flex;
     justify-content: space-between; /* This will push the duration to the right */
     align-items: center; /* Aligns items along the baseline of the container */
 }
-
 
 .experience-tile, .project-tile {
     background-color: #fff;
@@ -183,10 +179,52 @@ nav ul li:hover .dropdown {
     margin: 0; /* Reset margin */
 }
 
-
 .experience-header {
     display: flex;
     justify-content: space-between; /* This will push the duration to the right */
     align-items: center; /* Aligns items along the baseline of the container */
 }
 
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill-card {
+    flex: 1 1 calc(33% - 20px);
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card h3 {
+    margin-top: 0;
+}
+
+.skill-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.skill-card ul li {
+    margin-bottom: 8px;
+    padding-left: 1em;
+    position: relative;
+}
+
+.skill-card ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #0056b3;
+}
