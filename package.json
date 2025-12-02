@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/cobiwave/simplefolio/issues"
   },
-  "homepage": "https://github.com/cobiwave/simplefolio#readme",
+  "homepage": "https://chandrakirannarala.github.io",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.13.3",
     "parcel": "^2.13.3",
