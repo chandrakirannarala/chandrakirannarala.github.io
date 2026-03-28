@@ -303,7 +303,7 @@ const Sidebar = () => (
       <SidebarItem icon={<AtSign className="w-5 h-5" />} label="Contact" href="#contact" />
     </nav>
     <div className="mt-auto pt-6 border-t border-primary/10">
-      <a href="https://chandrakirannarala.github.io/assets/resume.pdf" target="_blank" rel="noreferrer" className="btn-primary w-full flex items-center justify-center gap-2 overflow-hidden">
+      <a href="assets/resume.pdf" target="_blank" rel="noreferrer" className="btn-primary w-full flex items-center justify-center gap-2 overflow-hidden">
         <FileUp className="w-4 h-4" />
         <span className="lg:block hidden group-hover:block transition-all whitespace-nowrap">VIEW_RESUME</span>
       </a>
@@ -382,7 +382,7 @@ const Hero = () => (
         <img 
           alt="Terminal Profile" 
           className="w-full h-full object-cover grayscale contrast-125 opacity-40 group-hover:opacity-80 transition-all duration-500" 
-          src="https://chandrakirannarala.github.io/profile.b7d31380.png"
+          src="assets/profile.png"
           referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 border-[8px] border-background group-hover:border-background/50 transition-all"></div>
