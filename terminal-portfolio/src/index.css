@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Space Grotesk", ui-monospace, SFMono-Regular, monospace;
+
+  --color-background: #0b1608;
+  --color-primary: #7fee64;
+  --color-primary-dim: #2d5524;
+  --color-surface: #172314;
+  --color-surface-high: #2c3828;
+  --color-ink: #d9e7cf;
+  --color-muted: #3f4a3a;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-ink font-sans selection:bg-primary selection:text-background;
+    background-image: radial-gradient(circle, #172314 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-mono tracking-tighter uppercase;
+  }
+}
+
+@layer components {
+  .terminal-glow {
+    box-shadow: 0 0 40px 10px rgba(127, 238, 100, 0.05);
+  }
+
+  .ghost-border {
+    @apply border border-muted/30;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-background font-mono font-bold px-6 py-3 uppercase tracking-widest transition-all hover:brightness-110 active:translate-x-0.5 active:translate-y-0.5;
+    box-shadow: 2px 2px 0px 0px #2d5524;
+  }
+
+  .btn-outline {
+    @apply border border-primary text-primary font-mono px-6 py-3 uppercase tracking-widest transition-all hover:bg-primary hover:text-background;
+  }
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+.glitch-hover:hover {
+  animation: glitch 0.2s infinite;
+}
